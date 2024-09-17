@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para o projeto estou usando Ruby 3.3.0, Rails 7.1.4 e SQLite 1.4
 
-Things you may want to cover:
+Para rodar o projeto pela primeira vez use os comandos:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- rails db:create
+- rails db:migrate
+- rails s

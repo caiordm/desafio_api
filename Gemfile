@@ -27,6 +27,9 @@ gem 'fog-aws'  # Para integração com o AWS S3
 
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
+gem 'rswag'
+
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 

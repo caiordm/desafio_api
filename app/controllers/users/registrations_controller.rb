@@ -15,7 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       render json: { status: { message: "Erro ao alterar senha: #{current_user.errors.full_messages.to_sentence}" } }, status: :unprocessable_entity
     end
   end
-
+  
   private
 
   def password_update_params
