@@ -8,6 +8,7 @@ primary_region = 'gig'
 console_command = '/rails/bin/rails console'
 
 [build]
+  prestart = 'bin/rails db:migrate'
 
 [[mounts]]
   source = 'data'
