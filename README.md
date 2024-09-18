@@ -7,3 +7,7 @@ Para rodar o projeto pela primeira vez use os comandos:
 - rails db:create
 - rails db:migrate
 - rails s
+
+Para ver a documentação entre na pasta "desafio_documentation" e use o comando:
+
+- npx serve

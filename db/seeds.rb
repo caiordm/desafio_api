@@ -1,11 +1,15 @@
-class AddInitialItems < ActiveRecord::Migration[7.1]
-  def up
-    20.times do |i|
-      Item.create!(title: "Item ##{i}", description: "A item.", user_id: 2)
-    end
-  end
+# class AddInitialItems < ActiveRecord::Migration[7.1]
+#   def up
+#     20.times do |i|
+#       Item.create!(title: "Item ##{i}", description: "A item.", user_id: 2)
+#     end
+#   end
 
-  def down
-    Item.delete_all
-  end
+#   def down
+#     Item.delete_all
+#   end
+# end
+
+20.times do |i|
+  Item.create!(title: "Item ##{i}", description: "A item.", user_id: 2)
 end

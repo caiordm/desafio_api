@@ -27,6 +27,9 @@ gem 'fog-aws'  # Para integração com o AWS S3
 
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
+# gem 'omniauth-google-oauth2'
+# gem 'omniauth-rails_csrf_protection'
+
 gem 'rswag'
 
 

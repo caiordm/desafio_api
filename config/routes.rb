@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   delete "/item/:id", to: "items#destroy"
 
   put 'users/:id', to: 'users#update'
+
+  get 'confirm_email', to: 'users#confirm_email'
 end

@@ -25,8 +25,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def respond_with(current_user, _opts = {})
     if resource.persisted?
+      UserMailer.confirmation_email(current_user).deliver_now
       render json: {
-        status: {code: 200, message: 'Registrado com sucesso'},
+        status: {code: 200, message: 'Email de confirmação enviado!'},
         data: UserSerializer.new(current_user).serializable_hash[:data][:attributes]
       }
     else
