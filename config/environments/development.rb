@@ -1,6 +1,8 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  config.hosts << "capyba-desafio.fly.dev"
+  config.hosts << "capyba-desafio-autumn-moon-9335.fly.dev"
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
@@ -33,23 +35,12 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   address:              'email-smtp.us-east-1.amazonaws.com', # Região SES
-  #   port:                 587,  # TLS
-  #   user_name:            ENV['SES_SMTP_USERNAME'],  # Username do SES
-  #   password:             ENV['SES_SMTP_PASSWORD'],  # Password do SES
-  #   authentication:       :login,
-  #   enable_starttls_auto: true,  # TLS
-  #   domain:               'localhost'
-  # }
 
-  # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.perform_caching = false
-
-  # # Para desenvolvimento, certifique-se de que a porta está correta
-  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { address: '127.0.0.1', port:  '1025' }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

@@ -107,6 +107,8 @@ GEM
     devise-jwt (0.12.1)
       devise (~> 4.0)
       warden-jwt_auth (~> 0.10)
+    dockerfile-rails (1.6.17)
+      rails (>= 3.0.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -334,6 +336,7 @@ DEPENDENCIES
   debug
   devise
   devise-jwt
+  dockerfile-rails (>= 1.6)
   dotenv-rails (~> 2.1, >= 2.1.1)
   fog-aws
   jsonapi-serializer

@@ -10,6 +10,6 @@
 #   end
 # end
 
-20.times do |i|
-  Item.create!(title: "Item ##{i}", description: "A item.", user_id: 2)
+15.times do |i|
+  Item.create!(title: "Item ##{i}", description: "A item.", user_id: 1)
 end
