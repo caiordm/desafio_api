@@ -10,6 +10,9 @@ console_command = '/rails/bin/rails console'
 [build]
   prestart = 'bin/rails db:migrate'
 
+[deploy]
+  release_command = "bin/rails db:migrate"
+
 [[mounts]]
   source = 'data'
   destination = '/data'
